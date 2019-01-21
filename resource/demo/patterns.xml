@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<patterns>
+	<pattern>
+		<id>pat_room_s</id>
+		<addition>true</addition>
+		<deletion>true</deletion>
+		<update>false</update>
+	</pattern>
+	<pattern>
+		<id>pat_all_guides</id>
+		<addition>true</addition>
+		<deletion>true</deletion>
+		<update>false</update>
+	</pattern>
+	<pattern>
+		<id>pat_room_x</id>
+		<addition>true</addition>
+		<deletion>true</deletion>
+		<update>false</update>
+	</pattern>
+	<pattern>
+		<id>pat_room_y</id>
+		<addition>true</addition>
+		<deletion>true</deletion>
+		<update>false</update>
+	</pattern>
+</patterns>

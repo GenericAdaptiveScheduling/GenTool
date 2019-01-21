@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rules> 
+    <rule> 
+        <id>rule_room</id>  
+        <formula> 
+            <forall var="x" in="pat_room_s"> 
+                <exists var="y" in="pat_room_s"> 
+                    <and> 
+                        <bfunc name="not_same"> 
+                            <param pos="1" var="x" field="field"/>  
+                            <param pos="2" var="y" field="field"/> 
+                        </bfunc>  
+                        <bfunc name="taxi_spd_close"> 
+                            <param pos="1" var="x" field="field"/>  
+                            <param pos="2" var="y" field="field"/> 
+                        </bfunc> 
+                    </and> 
+                </exists> 
+            </forall> 
+        </formula>  
+        <patterns>
+            <pattern>
+                <first type="del" name="pat_room_s"/>
+                <second type="add" name="pat_room_s"/>
+            </pattern>
+            <pattern>
+                <first type="del" name="pat_room_s"/>
+                <second type="del" name="pat_room_s"/>
+            </pattern>
+            <pattern>
+                <first type="add" name="pat_room_s"/>
+                <second type="add" name="pat_room_s"/>
+            </pattern>
+            <pattern>
+                <first type="add" name="pat_room_s"/>
+                <second type="del" name="pat_room_s"/>
+            </pattern>
+        </patterns>
+    </rule> 
+</rules>
