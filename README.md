@@ -1,4 +1,4 @@
-# S-conditionGenTool
+# GenTool (generating S-condition)
 This is a tool with UIs for generating GEAS's s-conditions automatically. It can be fed with an XML file for raw consistency constraints (rules.xml) and returned a new XML file for consistency constraints with annotated s-conditions for each.
 
 # Preparing steps
